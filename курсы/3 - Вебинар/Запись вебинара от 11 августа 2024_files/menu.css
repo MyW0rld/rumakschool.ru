@@ -1,0 +1,595 @@
+@charset "UTF-8";
+.gc-account-leftbar {
+  background: #2c3e50;
+  width: 70px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10002;
+  position: fixed;
+  padding: 0;
+  font-size: 14px;
+  margin: 0;
+}
+.gc-account-leftbar .show-mobile {
+  display: none;
+}
+.gc-account-leftbar .qr-link {
+  color: white;
+}
+.gc-account-leftbar .sub-icon {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+}
+.gc-account-leftbar .sub-icon .worksheet {
+  font-size: 0.7em;
+  width: 66px;
+  display: block;
+  margin: auto;
+}
+.gc-account-leftbar .sub-icon .worksheet.is_not_working {
+  color: #FFFFFF;
+  background: #FF0000;
+}
+.gc-account-leftbar .sub-icon .worksheet.is_working {
+  color: #000000;
+  background: #00FF0A;
+}
+.gc-account-leftbar .sub-icon .worksheet.is_working_project {
+  color: #FFFFFF;
+  background: #007FFF;
+}
+.gc-account-leftbar .sub-icon .worksheet.is_working_consult {
+  color: #000000;
+  background: #E0FE28;
+}
+.gc-account-leftbar .sub-icon .worksheet.is_working_incoming {
+  color: #FFFFFF;
+  background: #8F00FF;
+}
+.gc-account-leftbar a {
+  text-decoration: none;
+}
+.gc-account-leftbar a img {
+  max-width: 100%;
+}
+.gc-account-leftbar .toggle-link {
+  background: #34495e;
+  padding-top: 5px;
+  display: none;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  padding-left: 8px;
+  height: 100%;
+  width: 30px;
+  color: white;
+}
+.gc-account-leftbar .toggle-link.without-icon span {
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+}
+.gc-account-leftbar .toggle-link span {
+  top: 10px;
+  display: block;
+}
+.gc-account-leftbar .notify-count {
+  position: absolute;
+  font-weight: bold;
+  background: rgba(210, 50, 45, 0.7882352941);
+  width: 30px;
+  text-align: center;
+  padding: 5px 0px;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.8em;
+  bottom: 10px;
+  right: 10px;
+}
+.gc-account-leftbar .notify-count.with-label {
+  bottom: 23px;
+  right: 5px;
+  top: 25px;
+  left: 35px;
+}
+.gc-account-leftbar .gc-account-user-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.gc-account-leftbar .gc-account-user-menu .menu-item-title {
+  display: none;
+}
+.gc-account-leftbar .gc-account-user-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+  position: relative;
+}
+.gc-account-leftbar .gc-account-user-menu li a {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #34495e;
+  line-height: 12px;
+  text-decoration: none;
+}
+.gc-account-leftbar .gc-account-user-menu li a.with-label {
+  padding: 0;
+}
+.gc-account-leftbar .gc-account-user-menu li a:hover {
+  background-color: #5f7184;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-profile a {
+  padding: 0;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-profile.worksheet__is_not_working img {
+  border: 3px solid #FF0000;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-profile.worksheet__is_working img {
+  border: 3px solid #00FF0A;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-profile.worksheet__is_working_project img {
+  border: 3px solid #007FFF;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-profile.worksheet__is_working_consult img {
+  border: 3px solid #E0FE28;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-profile.worksheet__is_working_incoming img {
+  border: 3px solid #8F00FF;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-notifications_button_small a {
+  height: 36px;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-notifications_button_small .notify-count {
+  bottom: 7px;
+  right: 20px;
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-notifications .notify-count {
+  background: rgba(114, 153, 46, 0.8509803922);
+}
+.gc-account-leftbar .gc-account-user-menu li.menu-item-chatium .notify-count {
+  background: rgba(236, 130, 21, 0.8509803922);
+}
+.gc-account-leftbar .gc-account-user-menu li.active a, .gc-account-leftbar .gc-account-user-menu li.selected a {
+  background: #F0F0F0;
+}
+.gc-account-leftbar .gc-account-user-menu .selected .qr-link {
+  color: black;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 200px;
+  height: 100%;
+  background: #F0F0F0;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar li.menu-item-delimiter a {
+  border-top: 1px solid #ddd;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar li.menu-item-help a {
+  border-top: 1px solid #ddd;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar div.user-balance {
+  margin-left: 20px;
+  margin-top: -16px;
+  font-size: 0.8em;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar div.user-balance p {
+  margin-bottom: 0;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small {
+  width: 340px;
+  overflow: auto;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .loader {
+  text-align: center;
+  padding-top: 20px;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .no-notifications-message {
+  text-align: center;
+  padding-top: 20px;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notifications-footer {
+  height: 1px;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .mark-viewed-all {
+  float: right;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .all-notifications-footer-link {
+  padding: 5px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  display: block;
+  color: #000000;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .all-notifications-header-link {
+  color: #000000;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .header {
+  margin-top: 20px;
+  padding: 0 14px 5px 20px;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .all-notifications-header-link-wrapper {
+  float: left;
+  font-weight: bold;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group:hover {
+  background-color: #fdf9f1;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group {
+  display: block;
+  color: #333333;
+  border-top: 1px solid #e0e0e0;
+  position: relative;
+  padding: 14px 14px 10px 20px;
+  background-color: #ffffff;
+  font-size: 0.9em;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group .user-image {
+  float: left;
+  margin-right: 10px;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group .content {
+  width: 225px;
+  float: left;
+  margin-top: -2px;
+  line-height: 1.2em;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group .date {
+  position: absolute;
+  bottom: 5px;
+  right: 14px;
+  color: #c3c3c3;
+  font-size: 0.8em;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group .mark-viewed {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  color: #c3c3c3;
+  font-size: 20px;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group .mark-viewed:hover {
+  color: #000000;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group.notification-status-viewed:hover {
+  color: #737373;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group.notification-status-viewed {
+  background-color: #f0f0f0;
+  color: #afafaf;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .notification-group.notification-status-viewed .mark-viewed {
+  display: none;
+}
+.gc-account-leftbar .gc-account-user-submenu-bar-notifications_button_small .clear {
+  clear: both;
+}
+.gc-account-leftbar .menu-item-label {
+  display: block;
+  color: white;
+  font-weight: 600;
+  margin-bottom: -3px;
+  margin-top: 3px;
+}
+.gc-account-leftbar li.active .menu-item-label,
+.gc-account-leftbar li.selected .menu-item-label {
+  color: #2c3e50;
+  font-size: 11px;
+}
+
+@media (max-height: 650px) {
+  .gc-account-leftbar .notify-count {
+    width: 20px;
+    padding: 2px 0;
+  }
+  .gc-account-leftbar .gc-account-user-menu .menu-item:not(.menu-item-profile) .menu-item-icon {
+    max-height: 30px;
+  }
+  .gc-account-leftbar .gc-account-user-menu li a {
+    height: 60px;
+  }
+}
+@media (max-height: 550px) {
+  .gc-account-leftbar .notify-count {
+    width: 20px;
+    padding: 2px 0;
+  }
+  .gc-account-leftbar .gc-account-user-menu .menu-item:not(.menu-item-profile) .menu-item-icon {
+    max-height: 25px;
+  }
+  .gc-account-leftbar .gc-account-user-menu li a {
+    height: 50px;
+  }
+}
+.gc-account-user-submenu-bar .menu-item-chatium_updates .notify-count {
+  background: #ec8215;
+}
+.gc-account-user-submenu-bar h3 {
+  font-size: 22px;
+  padding-right: 10px;
+  margin-top: 20px;
+  padding-left: 20px;
+  color: #7f8c9a;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.gc-account-user-submenu-bar .gc-account-user-submenu {
+  margin: 0;
+  padding: 0;
+}
+.gc-account-user-submenu-bar .gc-account-user-submenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.gc-account-user-submenu-bar .gc-account-user-submenu li a {
+  display: block;
+  color: #34495e;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.gc-account-user-submenu-bar .gc-account-user-submenu li a:hover {
+  background: #E0E0E0;
+}
+.gc-account-user-submenu-bar .gc-account-user-submenu li .notify-count {
+  font-size: 0.7em;
+  line-height: 12px;
+}
+
+.gc-fade-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  display: none;
+}
+.gc-fade-wrapper .gc-fade {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 270px;
+  z-index: 999;
+  opacity: 0.3;
+}
+
+/* основной контент когда на странице есть меню */
+.gc-main-content.with-left-menu {
+  margin-left: 70px;
+}
+
+.with-left-menu .gc-into-main-content {
+  left: 70px;
+}
+
+/*
+.gc-main-content.with-left-menu.account-page-content {
+  margin-left: 100px;
+}
+*/
+.gc-main-content.expanded .container {
+  width: 96% !important;
+}
+
+.content-after-leftbar.expanded .container {
+  width: 96% !important;
+}
+
+.gc-account-user-help {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #35495D;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.gc-account-user-help:hover {
+  background-color: #5f7184;
+}
+
+.gc-both-main-content.container-auto-width .gtk-player .container, .gtk-player .container {
+  width: 100% !important;
+}
+
+.gc-page-nav-items-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  color: white;
+}
+.gc-page-nav-items-menu a.toggler-item {
+  display: none;
+}
+.gc-page-nav-items-menu a {
+  background: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .gc-page-nav-items-menu a.openinapp-link {
+    display: none;
+  }
+}
+/* вид для узкого экрана */
+@media (max-width: 768px) {
+  .main-page-block .container .breadcrumbs {
+    margin-top: 10px;
+  }
+  .inline-global-controls {
+    float: none;
+    display: inline-block;
+  }
+  .inline-global-controls .btn {
+    margin-left: 0;
+  }
+  .page-actions {
+    text-align: right;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .gc-fade-wrapper .gc-fade {
+    left: 0px;
+    opacity: 0.5;
+  }
+  .gc-account-leftbar {
+    bottom: 0;
+    top: auto;
+    z-index: 1000;
+  }
+  .gc-account-leftbar .hide-mobile {
+    display: none;
+  }
+  .gc-account-leftbar .show-mobile {
+    display: block;
+  }
+  .gc-account-leftbar .toggle-link {
+    background: #2c3e50;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    height: 45px;
+    z-index: 100;
+  }
+  .gc-account-leftbar .gc-account-user-menu {
+    margin-bottom: 45px;
+    background: #2c3e50;
+    width: 70px;
+    height: 100%;
+  }
+  .gc-account-leftbar .gc-account-user-submenu-bar {
+    bottom: 45px;
+    height: auto;
+  }
+  .with-left-menu .gc-into-main-content {
+    left: 0;
+  }
+  .gc-account-leftbar:not(.expanded) {
+    width: 100%;
+    cursor: pointer;
+    height: 45px;
+    bottom: 0;
+  }
+  .gc-account-leftbar:not(.expanded) .gc-account-user-menu {
+    display: none;
+  }
+  .gc-account-leftbar:not(.expanded) .toggle-link .collapse-icon {
+    display: none;
+  }
+  .standard-logo {
+    display: none;
+  }
+  .main-page-block .container {
+    padding-top: 0;
+  }
+  .gc-main-content.with-left-menu {
+    margin-left: 0;
+    margin-bottom: 45px;
+  }
+  .gc-main-content.with-left-menu.account-page-content {
+    margin-left: 0px;
+    margin-bottom: 45px;
+  }
+  .gc-main-content.with-left-menu.account-page-content.breadcrumbs {
+    margin-left: 30px;
+  }
+  .gc-account-leftbar.expanded {
+    height: 100%;
+    background: transparent;
+  }
+  .gc-account-leftbar.expanded .toggle-link {
+    display: block;
+    width: 100%;
+    position: fixed;
+  }
+  .gc-account-leftbar.expanded .toggle-link .expand-icon {
+    display: none;
+  }
+  .gc-account-user-help {
+    left: 30px;
+    display: none;
+  }
+  .gc-account-leftbar.expanded .gc-account-user-help {
+    display: inline-block;
+    display: none;
+  }
+  .gc-page-nav-items-menu {
+    position: fixed;
+    left: 80px;
+    top: auto;
+    bottom: 0px;
+    z-index: 1200;
+  }
+  .gc-page-nav-items-menu a.toggler-item {
+    display: block;
+  }
+  .gc-page-nav-items-menu a.item {
+    display: none;
+  }
+  .gc-page-nav-items-menu.expanded a.item {
+    display: block;
+  }
+  .gc-page-nav-items-menu a {
+    height: 45px;
+    display: block;
+    z-index: 1000;
+    background: #21252f;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 0px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+.gc-both-main-content.container-auto-width .container {
+  width: auto !important;
+  margin-right: 400px;
+  max-width: 960px;
+}
+
+.gc-both-main-content.container-auto-width .my-container {
+  width: auto !important;
+  margin-right: 400px;
+  max-width: 1024px;
+}
+
+/*# sourceMappingURL=menu.css.map */

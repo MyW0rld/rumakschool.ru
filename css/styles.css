@@ -1,0 +1,23 @@
+#menu ul {
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #18171C;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: #C4AB4A;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#menu li a.active {
+    background-color: #2b2b2b;
+}

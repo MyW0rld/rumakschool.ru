@@ -1,0 +1,10 @@
+.b-comment-reply {
+    color: #808080;
+    padding: 0 3px 0 3px;
+}
+.b-comment-reply .button {
+    color: #428bca;
+    cursor: pointer;
+    border-bottom: 1px dotted #428bca;
+    font-size: 0.8em;
+}

@@ -1,0 +1,8 @@
+html body,
+.form-control {
+	font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+	font-family: "Lato","proxima-nova", Helvetica, Arial, sans-serif;
+}

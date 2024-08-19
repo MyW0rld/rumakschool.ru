@@ -1,0 +1,447 @@
+.gc-file-dialog {
+  height: 620px;
+  z-index: 20; }
+  .gc-file-dialog .file-dialog-detail {
+    display: none; }
+    .gc-file-dialog .file-dialog-detail .btn-confirm {
+      margin-right: 10px; }
+  .gc-file-dialog .clear-link {
+    cursor: pointer; }
+  .gc-file-dialog.multi-select-mode .file-dialog-detail {
+    height: 280px;
+    display: block;
+    background: #F0F0F0;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #bbb; }
+    .gc-file-dialog.multi-select-mode .file-dialog-detail .info-div {
+      padding: 15px;
+      padding-bottom: 0px; }
+    .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list {
+      height: 230px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap; }
+      .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item {
+        display: inline-block;
+        border: 1px solid #ccc;
+        margin: 10px 20px;
+        width: 152px;
+        position: relative;
+        cursor: col-resize; }
+        .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item img {
+          border-bottom: 1px solid #ccc; }
+        .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item .description-block {
+          text-decoration: none;
+          display: block;
+          text-align: center; }
+          .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item .description-block.active .set-description-link {
+            display: none; }
+          .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item .description-block.active input {
+            display: inline-block; }
+          .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item .description-block .set-description-link {
+            border-bottom: 1px dotted #999;
+            margin-top: 5px;
+            margin-bottom: 5px; }
+          .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item .description-block input {
+            width: 100%;
+            display: none;
+            border: 0px; }
+        .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item .btn-unselect {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: white;
+          color: black;
+          cursor: pointer;
+          border: 1px solid #999; }
+        .gc-file-dialog.multi-select-mode .file-dialog-detail .selected-files-list .selected-file-item img {
+          width: 150px; }
+  .gc-file-dialog .file-dialog-layout {
+    height: 100%;
+    overflow: hidden; }
+    .gc-file-dialog .file-dialog-layout .file-dialog-menu {
+      height: 100%;
+      float: left;
+      width: 15%;
+      background-color: #efefef; }
+    .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector {
+      height: 69%;
+      padding-left: 3%;
+      overflow: hidden;
+      overflow-y: auto; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-picker {
+        height: 100px;
+        padding: 20px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-picker.selected {
+          background: #F0F0FF; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-picker:hover {
+          background: #F0F0F0; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-picker .icon {
+          font-size: 30px;
+          display: block;
+          margin-bottom: 10px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-directory-picker {
+        height: 40px;
+        padding: 13px;
+        font-size: 12px;
+        text-align: left;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-directory-picker.selected {
+          background: #dedede; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-directory-picker:hover {
+          background: #dedede; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-folder-selector .folder-directory-picker .icon {
+          float: left;
+          font-size: 13px;
+          display: block;
+          margin-bottom: 10px;
+          padding-right: 10px; }
+    .gc-file-dialog .file-dialog-layout .file-dialog-action-selector {
+      padding-left: 8%;
+      padding-right: 8%;
+      padding-top: 8%; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-action-selector .folder-action {
+        font-size: 13px;
+        border-radius: 3px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-action-selector .folder-action.selected {
+          background: #F0F0FF; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-action-selector .folder-action:hover {
+          background: #F0F0F0; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-action-selector .folder-action .icon {
+          float: left;
+          font-size: 13px;
+          display: block;
+          margin-bottom: 10px;
+          padding-right: 10px; }
+    .gc-file-dialog .file-dialog-layout .file-dialog-size-progress {
+      padding-top: 1%;
+      position: absolute;
+      width: 15%; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-size-progress .progress {
+        height: 5px;
+        margin-bottom: 2px;
+        margin-left: 9%;
+        margin-right: 9%;
+        background-color: #d2d2d2; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-size-progress .progress-text {
+        text-align: center;
+        font-size: smaller;
+        margin: 2px; }
+    .gc-file-dialog .file-dialog-layout .file-dialog-delimiter {
+      margin-left: 5%;
+      margin-right: 5%; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-delimiter hr {
+        border: 0;
+        border-top: 1px solid #abaaaa;
+        width: 91%; }
+    .gc-file-dialog .file-dialog-layout .file-dialog-content {
+      height: 100%; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .folder {
+        padding: 20px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .folder-frames-content {
+        overflow: hidden;
+        overflow-y: auto;
+        height: 590px;
+        margin-top: 20px;
+        padding: 0 0 0 0 !important; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .folder-title {
+        font-weight: bold;
+        font-size: xx-large;
+        width: auto;
+        display: inline-block;
+        position: relative;
+        bottom: 6px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .folder-header {
+        border-bottom: 1px solid #ddd;
+        margin-left: 15%;
+        width: 85%; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .create-folder-btn {
+        background-color: #dedede;
+        font-weight: 700;
+        margin-right: 1%;
+        display: inline-block;
+        float: right; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .files-number {
+        font-size: smaller;
+        font-weight: 600;
+        color: #bfa7a7;
+        padding-right: 1%;
+        display: inline-block; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .search-file-input {
+        vertical-align: middle;
+        line-height: 100%;
+        width: 25%;
+        margin-left: 1%;
+        display: none; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .search-file-input input {
+          width: 100%; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .sort-form {
+        padding-bottom: 1%;
+        display: inline-block; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .sort-form #order-by {
+          border: 0px;
+          background: #ececec; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .search-zoomer {
+        display: inline-block;
+        left: 1%;
+        top: 2px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .delete-folder-btn {
+        float: right;
+        border: 1px solid;
+        background-color: #f3f3f3; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .uploadifive-button input {
+        height: 100%;
+        cursor: pointer; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .tus-uploader-btn {
+        background-color: #505050;
+        background-image: linear-gradient(bottom, #505050 0%, #707070 100%);
+        background-image: -o-linear-gradient(bottom, #505050 0%, #707070 100%);
+        background-image: -moz-linear-gradient(bottom, #505050 0%, #707070 100%);
+        background-image: -webkit-linear-gradient(bottom, #505050 0%, #707070 100%);
+        background-image: -ms-linear-gradient(bottom, #505050 0%, #707070 100%);
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #505050), color-stop(1, #707070));
+        background-position: center top;
+        background-repeat: no-repeat;
+        color: #FFF;
+        font: bold 12px Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        position: relative;
+        width: 120px;
+        cursor: pointer; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .tus-uploader-title {
+        height: 30px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .tus-uploader-title .btn {
+        margin: -3px 20px 0px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .tus-progress-icon {
+        float: left;
+        cursor: pointer;
+        font-size: initial;
+        margin: 1px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .files-list {
+        margin-top: 18px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 500px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item {
+        float: left;
+        margin-left: 1.9%;
+        margin-bottom: 10px;
+        width: 202px;
+        height: 240px;
+        border: 1px solid #ddd; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item.selected {
+          border: 1px solid red; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .btn {
+          padding-left: 2%;
+          padding-right: 5%;
+          font-size: 0.9vw;
+          font-weight: normal; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item img {
+          cursor: pointer;
+          border-bottom: 1px solid #ddd;
+          height: 165px;
+          width: 100%;
+          object-fit: contain; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .btn-favorites {
+          color: #aaa;
+          padding-right: 4px;
+          padding-left: 4px;
+          float: right; }
+          .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .btn-favorites .from-favorites {
+            display: none; }
+          .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .btn-favorites.in-favorites {
+            color: darkgoldenrod; }
+            .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .btn-favorites.in-favorites .to-favorites {
+              display: none; }
+            .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .btn-favorites.in-favorites .from-favorites {
+              display: inline-block; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .titles-text {
+          margin-left: 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          cursor: pointer;
+          font-weight: 300;
+          color: #255690;
+          font-size: small; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item .file-create-data {
+          padding-left: 1%;
+          font-size: x-small;
+          color: #7b6a6a;
+          margin-left: 4px; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item.video-preview {
+        height: 220px;
+        width: 23.05%; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item.video-preview img {
+          height: 150px;
+          width: 100%;
+          object-fit: contain; }
+      .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item.video-frame {
+        height: 150px; }
+        .gc-file-dialog .file-dialog-layout .file-dialog-content .file-item.video-frame img {
+          height: 150px;
+          width: 200px;
+          object-fit: cover; }
+
+.file-dialog-modal-content.modal-body {
+  padding: 0; }
+
+.pixabay-folder {
+  background: #F0F0F0; }
+  .pixabay-folder .search-panel {
+    background: #F0F0F0;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-left: 17%;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%; }
+    .pixabay-folder .search-panel .btn-next-page, .pixabay-folder .search-panel .btn-prev-page {
+      cursor: pointer; }
+    .pixabay-folder .search-panel .results-nav {
+      float: right; }
+    .pixabay-folder .search-panel .search-input {
+      margin-left: 5px; }
+    .pixabay-folder .search-panel select option {
+      font-size: 14px; }
+  .pixabay-folder .pixabay-info-label {
+    background: #F0F0F0;
+    padding-left: 10px;
+    font-size: 12px;
+    padding-bottom: 10px;
+    display: inline-block; }
+    .pixabay-folder .pixabay-info-label img {
+      height: 30px;
+      float: left;
+      margin-right: 20px; }
+  .pixabay-folder .files-list {
+    padding: 20px; }
+    .pixabay-folder .files-list .file-item.pixabay-file-item {
+      width: 180px;
+      display: table;
+      border: 0px solid #ddd;
+      position: relative; }
+      .pixabay-folder .files-list .file-item.pixabay-file-item.loading {
+        background: #F0F0F0;
+        opacity: 0.5; }
+      .pixabay-folder .files-list .file-item.pixabay-file-item .preview-div {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        z-index: 500;
+        background: white;
+        border: 1px solid #ccc; }
+        .pixabay-folder .files-list .file-item.pixabay-file-item .preview-div .buttons {
+          padding: 5px;
+          text-align: center; }
+        .pixabay-folder .files-list .file-item.pixabay-file-item .preview-div img {
+          max-width: 300px;
+          max-height: 300px; }
+      .pixabay-folder .files-list .file-item.pixabay-file-item .img-wrapper {
+        height: 170px;
+        text-align: center;
+        line-height: 170px;
+        position: relative;
+        /*background: #F0F0F0;*/
+        display: table-cell;
+        vertical-align: middle; }
+        .pixabay-folder .files-list .file-item.pixabay-file-item .img-wrapper img {
+          vertical-align: middle;
+          background: #a79a9a; }
+
+.file-dialog-modal {
+  z-index: 12000; }
+
+.editable-image .buttons-block {
+  padding: 10px; }
+  .editable-image .buttons-block .btn {
+    margin-right: 5px; }
+
+.menu-accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: inline-block;
+  width: 82%; }
+
+.plus-sign-container {
+  display: inline-block;
+  width: 18%;
+  height: 40px;
+  font-size: 12px;
+  overflow: hidden; }
+  .plus-sign-container .plus-sign {
+    position: relative;
+    top: 33%;
+    left: 33%; }
+
+.plus-sign-container:hover {
+  background-color: #ccc; }
+
+.dialogue-active, .menu-accordion:hover {
+  background-color: #ccc; }
+
+.menu-accordion:before {
+  content: "\203A";
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+  font-size: 16px;
+  position: relative;
+  bottom: 4px; }
+
+.dialogue-active:before {
+  content: "\203A";
+  transform: rotate(90deg); }
+
+.menu-panel {
+  padding: 0px;
+  max-height: 0px;
+  transition: max-height 0.2s ease-out;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  overflow-y: auto; }
+  .menu-panel .icon {
+    padding-left: 15%;
+    padding-right: 9%; }
+
+.grid-image {
+  float: left;
+  border: 1px solid black;
+  height: 55px;
+  width: 55px;
+  margin: 2px 2px 2px 2px;
+  overflow: hidden; }
+
+.grid-image img {
+  width: 100%;
+  transform: scale(3); }
+
+/*# sourceMappingURL=file-dialog.css.map */

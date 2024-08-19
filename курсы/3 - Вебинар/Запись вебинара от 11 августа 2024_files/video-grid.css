@@ -1,0 +1,115 @@
+.grid-content {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 590px;
+    margin: 20px 0 0 0;
+    padding-left: 20px;
+}
+
+.wdb-root {
+    margin: 0 0 32px 0;
+}
+
+.wvc-root {
+    margin: 0 0 32px 0;
+}
+
+.wvc-root img {
+    width: 200px;
+    object-fit: contain;
+    margin: 0 0 12px 0;
+}
+
+.wss-root {
+    margin: 0 0 32px 0;
+}
+
+.wss-label {
+    display: block;
+}
+
+.wss-list {
+    width: 222px;
+    height: 32px;
+    font-size: 16px;
+}
+
+.wss-list--disabled {
+    display: none;
+}
+
+.wps-root {
+    margin: 0 0 32px 0;
+}
+
+.wps-label {
+    margin: 0 0 10px 0;
+}
+
+.wps-video-preview {
+    width: 212px;
+    background: #8e8e8e;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    border: 1px solid #000;
+}
+
+.wps-position {
+    width: 60px;
+    height: 32px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    will-change: opacity;
+    background: #8e8e8e;
+}
+
+.wps-position-without-border {
+    width: 60px;
+    height: 32px;
+    margin: 5px;
+}
+
+.wps-video-preview:not(.wps-video-preview--disabled) .wps-position:hover {
+    background: #fff;
+    opacity: 0.4;
+}
+
+.wps-position--selected {
+    opacity: 1;
+    background: #fff;
+}
+
+.wps-position--selected:hover {
+    opacity: 1;
+}
+
+.wps-video-preview--disabled {
+    opacity: 0.3;
+}
+
+.wps-position--empty {
+    visibility: hidden;
+}
+
+.wss-list-text {
+    font-size: 18px;
+    opacity: 0.3;
+}
+
+.wss-list-text--disabled {
+    display: none;
+}
+
+.inside-icon {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 3;
+}

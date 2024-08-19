@@ -1,0 +1,17 @@
+.b-like {
+    font-size: 0.8em;
+}
+.b-like a {
+    font-size: 1em;
+}
+.b-like .button {
+    color: #428bca;
+    cursor: pointer;
+    border-bottom: 1px dotted #428bca
+}
+.b-like .positive-count .icon, .b-like .positive-count .value {
+    color: #428bca;
+}
+.b-like .positive-count .icon {
+    font-size: 1.1em;
+}

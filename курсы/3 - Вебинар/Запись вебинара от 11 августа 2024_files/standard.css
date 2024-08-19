@@ -1,0 +1,195 @@
+.standard-page-content .btn {
+  border-radius: 0px; }
+
+h1.standard-page-title {
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px; }
+
+.standard-page-content {
+  padding-bottom: 100px; }
+  .standard-page-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px; }
+  .standard-page-content h1.standard-page-title {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee; }
+  .standard-page-content .breadcrumb {
+    background-color: transparent;
+    padding: 0px; }
+
+.standard-logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 60px; }
+  .standard-logo .logo-text {
+    font-size: 40px;
+    color: #BBB;
+    font-weight: bold; }
+
+.standard-page-header {
+  width: 100%;
+  border-bottom: 0px;
+  margin-top: 20px; }
+
+.standard-page-actions {
+  float: right;
+  margin-bottom: 0; }
+
+.standard-page-menu {
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px; }
+  .standard-page-menu li {
+    float: left;
+    margin-right: 15px;
+    padding: 5px 20px; }
+  .standard-page-menu li.active {
+    background: #F0F0F0; }
+    .standard-page-menu li.active a {
+      color: black;
+      font-weight: bold; }
+
+.grid-view .summary {
+  text-align: right; }
+
+.standard-form {
+  max-width: 400px; }
+
+.standard-money-field {
+  max-width: 190px; }
+
+.input-group.date {
+  max-width: 250px; }
+
+.input-group.bootstrap-touchspin {
+  max-width: 150px; }
+  .input-group.bootstrap-touchspin input {
+    text-align: center; }
+
+.standard-money-field input {
+  text-align: right; }
+
+.error-summary {
+  background: lightcoral;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px; }
+  .error-summary ul {
+    margin-bottom: 0px; }
+  .error-summary a, .error-summary a:hover {
+    color: white;
+    text-decoration: underline; }
+
+/*
+.standard-page-content .kv-panel-before, .standard-page-content .kv-panel-after {
+    display: none;
+}
+*/
+.standard-page-content .breadcrumb > li + li:before {
+  content: " - ";
+  white-space: nowrap;
+  color: black;
+  padding-left: 0px;
+  padding-right: 3px; }
+
+.top-notification-wrapper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0; }
+
+.top-notification {
+  text-align: left;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  line-height: 15px;
+  right: 0;
+  left: 0; }
+  .top-notification a {
+    color: white;
+    text-decoration: underline; }
+
+.top-notification-notice {
+  background: coral; }
+
+.top-notification-warning {
+  background: red; }
+
+label {
+  font-weight: normal; }
+
+/*label.control-label {
+  font-weight: bold;
+}*/
+.gc-main-content:not(.with-left-menu) .top-notification {
+  margin-left: 230px; }
+
+.gc-main-content.wide:not(.with-left-menu) .top-notification {
+  margin-left: 70px; }
+
+.small-user-thumbnail {
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #bbb; }
+
+textarea.normal {
+  width: 100%;
+  border: 1px solid #ddd; }
+
+.header-with-tags {
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  .header-with-tags h1 {
+    margin: 0;
+    margin-right: 20px; }
+  .header-with-tags .gc-tags {
+    margin-top: 8px; }
+
+.editable-link-wrapper .link {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dashed black;
+  color: black; }
+
+.editable-link-wrapper h1 .link {
+  border-bottom: 0px; }
+
+.editable-link-wrapper.no-value .link {
+  color: #999;
+  border-color: #999; }
+
+.editable-link-wrapper input {
+  display: none; }
+
+.editable-link-wrapper textarea {
+  display: none; }
+
+.editable-link-wrapper.edit-mode input {
+  display: inline-block; }
+
+.editable-link-wrapper.edit-mode textarea {
+  display: inline-block; }
+
+.editable-link-wrapper.edit-mode .link {
+  display: none; }
+
+.editable-link-wrapper.edit-mode .hide-in-edit-mode {
+  display: none; }
+
+@media screen and (max-width: 767px) {
+  .top-notification {
+    margin-left: 0 !important; } }
+
+/*# sourceMappingURL=standard.css.map */

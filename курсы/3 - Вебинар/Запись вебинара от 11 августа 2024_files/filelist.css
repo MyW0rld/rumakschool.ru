@@ -1,0 +1,9 @@
+.simple-filelist { list-style: none; padding-left: 20px; }
+.simple-filelist li { margin-bottom: 20px; overflow: hidden; }
+.simple-filelist li .simple-filelist-filesize { display: block; }
+.simple-filelist li .simple-filelist-icon { display: block; margin-bottom: 10px; }
+
+.simple-video-list { list-style: none; padding-left: 0; margin-top: 20px; }
+.simple-video-list li { margin-bottom: 15px; overflow: hidden; }
+.simple-video-list li .simple-video-list-file-info { display: block; }
+.simple-video-list li .simple-video-list-item-del { color: red; cursor: pointer; padding-right: 5px; }

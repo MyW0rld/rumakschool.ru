@@ -1,0 +1,599 @@
+.comments-tree .user-image-wrapper { float: left; margin-right: 10px }
+.comments-tree, .comments-tree a { font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px}
+.comments-tree, .comments-tree .template-links a {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.comments-tree a.user-profile-link {
+    color: #333;
+}
+
+.comments-tree {
+    font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif; font-size: 14px;
+    font-weight: normal;
+}
+
+.comments-tree .title {
+	font-size: 12px;
+}
+
+.comments-tree .title .comment-delete-link {
+	font-size: 14px;
+}
+
+.comments-tree .files img {
+    width: 30%;
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+.comments-tree.float-images .comment-files-widget {
+    clear: both;
+    overflow: hidden;
+}
+.comments-tree.float-images .file {
+    float: left;
+    margin-right:10px;
+    max-width: 200px;
+}
+.comments-tree.float-images .files img {
+    width: 100%;
+}
+
+.comments-tree .comment .title {
+    font-weight: bold;
+}
+.comments-tree .level-1 .comment .user-image-wrapper {
+    width: 50px;
+    height: 50px;
+}
+.comments-tree .level-1 .comment-wrapper {
+    padding: 10px 10px 0 10px;
+    /*margin-left: 10px;*/
+    padding-top: 5px;
+    background: none;
+}
+
+.chat-widget .comments-tree .level-1 .comment-wrapper {
+    padding: 0 10px 0 10px !important;
+}
+
+.comments-tree .comment-wrapper {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.comments-tree .level-2 .comment-wrapper {
+    margin-bottom: 2px;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+a.more-comments.level-2 {
+    margin-left: 60px;
+}
+
+.comments-tree .level-2 .comment-wrapper {
+    background-color: #f9f9f9;
+    margin-left: 60px;
+}
+
+.chat-widget .comments-tree .level-2 .comment-wrapper, .chat-widget a.more-comments.level-2 {
+    margin-top: 10px;
+    background: none;
+    margin-left: 0 !important;
+}
+
+.comments-tree .more {
+    padding-left: 10px;
+}
+
+.comments-tree .level-1 > .comment-wrapper > .comment > .text {
+    overflow: visible;
+    padding-bottom: 15px
+}
+
+.comments-tree .level-1 .comment-wrapper .comment-form-wrapper {
+    padding: 0px 10px 0 0px;
+    background: none;
+    margin-left: 60px;
+}
+
+.chat-widget .comments-tree .level-1 .comment-wrapper .comment-form-wrapper {
+    margin-left: 0 !important;
+}
+
+.comments-tree .level-2 .comment-wrapper .user-image-wrapper, .level-1 .comment-form-wrapper .user-image-wrapper {
+    width: 28px;
+    height: 28px;
+    margin-left: 7px;
+}
+.comments-tree .user-image-wrapper img { width: 100%;}
+.comments-tree .level-2 .comment-wrapper .title {
+    /*font-weight: normal;*/
+}
+
+.comments-tree .text {
+    line-height: 18px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    word-wrap: break-word;
+}
+
+/* QNA styles */
+.comments-tree .gc-comment .text .main .qna-wrapper {
+    position: relative;
+    margin: 10px 0 0 0;
+    text-overflow: ellipsis;
+    background-color: rgb(238 238 238 / 80%);
+    border-radius: 5px;
+    padding: 10px 0;
+
+}
+
+.comments-tree .gc-comment .text .main .qna-wrapper i {
+    position: absolute;
+    font-size: 25px;
+    left: 5px;
+}
+
+.comments-tree .gc-comment .text .main .qna-wrapper .faq-logo {
+    position: absolute;
+    font-size: 13px;
+    left: 10px;
+    background-color: #6f6f6f;
+    color: #f7f7f7;
+    font-weight: bold;
+    border-radius: 2px;
+    line-height: 18px;
+    width: 36px;
+    height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.comments-tree .gc-comment .text .main .qna-wrapper .qna-item {
+    margin-left: 56px;
+    padding: 0 20px 0 0;
+}
+
+.comments-tree .gc-comment .text .main .qna-wrapper .qna-item a {
+    cursor: pointer;
+}
+
+.comments-tree .gc-comment .text .main .qna-wrapper .qna-item .operations {
+    float: right;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .title span {
+    /*font-size: 10px;*/
+    color: #ababab;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .comment {
+    position: relative;
+    display: none;
+    color: #84a58a;
+    font-size: 13px;
+    line-height: 14px;
+    word-wrap: break-word;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .question,
+.comments-tree .gc-comment .qna-data-item .qna-item .answer {
+    position: relative;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item div {
+    padding-bottom: 10px;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .operations a {
+    font-size: 75%;
+    margin-left: 10px;
+}
+.comments-tree .gc-comment .qna-data-item .qna-item .operations a.hide-qna {
+    text-decoration: underline dotted;
+    margin-left: 15px;
+}
+
+.comments-tree .gc-comment .qna-item-more-one,
+.comments-tree .gc-comment .qna-item-no-one {
+    text-decoration: underline;
+    font-style: italic;
+    padding-bottom: 0!important;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .title a {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: #5cb85c;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .title a i {
+    display: inline-block;
+    font: normal normal bold 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .answer {
+    position: relative;
+    word-wrap: break-word;
+}
+
+.comments-tree .gc-comment .qna-data-item .qna-item .title {
+    font-size: 14px;
+}
+
+/* end QNA styles */
+
+.comments-tree .typing-text {
+    margin: -15px 10px 0 10px;
+    height: 20px;
+    font-size: 0.8em;
+}
+/*.emoji-button {*/
+    /*right: 400px !important;*/
+/*}*/
+.comment-form-wrapper {
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: #F0F0F0;
+    padding: 20px 10px 20px 10px;
+}
+
+.comment-form-wrapper .new-comment {}
+.comment-form-wrapper .new-comment .btn-send { display: none; }
+.comment-form-wrapper .new-comment .download-csv { display: none; }
+.comment-form-wrapper .new-comment-textarea { width: 100%; border: 1px solid #ddd; padding-left: 4px;}
+.comment-form-wrapper  .online-users-count { display: block; float: left; margin-top: 10px; padding-top: 6px; padding-left: 10px; color: #999; }
+
+.comment-form-wrapper .new-comment .btn-send {
+    border-radius: 0px;
+    margin-top: 5px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+}
+.comment-form-wrapper .new-comment .btn-delete-comments {
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+.comment-form-wrapper .file-uploader {
+    margin-top: 5px;
+    float: left;
+    margin-left: 5px;
+}
+
+.comment .uploadifive-button input, .comment-form-wrapper .uploadifive-button input {
+    cursor: pointer;
+}
+
+
+.comment-form-wrapper .new-comment.active .btn-send { display: block; margin-top: 10px; }
+.comment-form-wrapper .new-comment.active-always .download-csv { display: block; margin-top: 10px; font-size: 12px; }
+.comment-form-wrapper .new-comment.active-always .btn-send { display: block; margin-top: 10px; }
+
+.comment-form-wrapper .new-comment.with-file .comment-attach-file-link { display: none;}
+
+.comment-form-wrapper .new-comment .textarea-block { overflow: hidden;}
+.comment-form-wrapper .new-comment .textarea-block > div { position: relative; }
+.comment-form-wrapper .comment-attach-file-link { color: #bbb; font-size: 18px; cursor: pointer}
+.comment-wrapper .files.active { padding-top: 10px; padding-bottom: 0; position: relative;}
+
+@media screen and (max-width: 767px) {
+    .download-csv {display: none !important;}
+
+    .gc-comment-form .user-profile-image {
+        display: none;
+    }
+
+    .answer-form .user-profile-image {
+        display: none;
+    }
+}
+
+.level-1 .comment-form-wrapper  .user-image-wrapper { display: none}
+
+.comment-user-type {
+    color: #27ae60;
+}
+
+.attach-file-button-container {
+    position: absolute !important;
+    top:4px;
+    right:30px;
+}
+
+.edit-attach-file-button-container {
+    position: absolute !important;
+    top:4px;
+    right:5px;
+}
+
+.pseudo-link {
+    cursor: pointer;
+    color: #006caf;
+}
+
+.pseudo-link:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+.pause-wrapper {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.chat-widget {
+    width: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:white;
+    z-index:900;
+    border: 1px #F0F0F0 solid;
+}
+.chat-widget.chat-collapsed {
+    background: #F0F0F0;
+    width: 30px;
+    cursor: pointer;
+}
+.chat-widget .chat-expand-btn {
+    display: none;
+}
+.chat-widget.chat-collapsed .chat-expand-btn {
+    display: block;
+}
+
+.chat-widget .chat-collapse-btn {
+    position: absolute;
+    top: 5px;
+    right: 16px;
+    background: #FFF;
+}
+.chat-widget.chat-collapsed .chat-collapse-btn {
+    display: none;
+}
+
+.chat-widget.chat-collapsed .comments-tree {
+    display: none;
+}
+.chat-expand-btn {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 5px;
+}
+
+.chat-widget .user-image-wrapper, .chat-widget .user-payed-label, .chat-widget .fa-graduation-cap, .chat-widget .comment-time {
+    display:none;
+}
+.chat-widget .title .text:after {
+    content: ":";
+}
+.chat-widget, .chat-widget .comments-tree-wrapper, .chat-widget .comments-tree
+{
+    height: 100%;
+}
+.chat-widget .comments-container {
+    overflow: auto;
+    /*padding-bottom: 90px;*/
+}
+.chat-widget .comments-container .comments-top-level {
+    margin-bottom: 120px;
+}
+.chat-widget .gc-comment-form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+.gc-bottom-margin.chat-widget .gc-comment-form {
+    margin-bottom: 44px;
+}
+.chat-widget .b-like-and-subscribe-notifications {
+    display: none;
+}
+.chat-widget .title, .chat-widget .comments .text, .chat-widget .text .main, .chat-widget .text .main  .text-content{
+    display: inline;
+}
+.chat-widget .comment {
+    overflow: hidden;
+}
+.chat-widget .comment-files-widget {
+    overflow: hidden;
+}
+.chat-widget .file {
+    float: left;
+    max-width: 100px;
+    margin-right: 20px;
+}
+.chat-widget .comments-tree .files img {
+    width: 100%;;
+}
+.chat-widget .pause-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.chat-widget .comment-form-wrapper .new-comment .download-csv {
+    display: none !important;
+}
+.chat-widget .date-divider {
+    color: #ccc;
+    text-align: center;
+    border-bottom: 1px solid #F0F0F0;
+    line-height: 0.1em;
+    margin: 10px;
+}
+.chat-widget .date-divider span {
+    background:#fff;
+    padding:0 10px
+}
+.comments-tree .worker .text {
+    color: #337ab7;
+}
+@media screen and (max-width: 1050px) {
+    .chat-widget {
+        width: 310px;
+    }
+}
+.gc-user-comment--10 .comment .title {
+    display: none;
+}
+.comments-tree .gc-user-comment--10.level-1 .comment-wrapper {
+    background: lightyellow;
+    padding: 5px !important;
+}
+
+.template-links {
+    clear: both;
+}
+
+
+.comment-template-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.conversation-controls {
+    color: #bbb;
+    overflow: hidden;
+    right: 0;
+    margin-bottom: 10px;
+}
+
+.conversation-control-tab .search-list {
+    padding-left: 0;
+    margin-left: 0;
+}
+.conversation-control-tab .search-list li {
+    padding-left: 20px;
+    margin-top: 20px;
+    max-height: 40px;
+    overflow-y: hidden;
+    color: #333;
+}
+
+.conversation-control-tab .search-list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.conversation-controls .conversation-controls-tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+.conversation-controls .info {
+    padding: 3px;
+}
+
+.conversation-controls .conversation-controls-tabs  .tab {
+    float: right;
+    cursor: pointer;
+    color: #bbb;
+    background: rgb(250,250,251);
+    margin-right: 20px;
+}
+.conversation-controls .conversation-controls-tabs  .tab.active {
+    color: #222;
+}
+
+
+.comments-tree .history-action {
+    text-align: center;
+    position: relative;
+    min-height: 20px;
+    border: 1px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    clear: both;
+
+
+}
+.comments-tree .history-action .line {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+
+}
+.comments-tree .history-action .inner-html {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    white-space: nowrap;
+    color: #999;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    background: rgb(250,250,251);
+    font-size: 11px;
+
+}
+
+.comments-tree .history-action .inner-html-data {
+    background: lightyellow;
+    text-align: left;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*
+.conversation-widget.with-controls .gc-comment-form {
+    padding-top: 10px;
+}
+*/
+.conversation-widget.with-controls .gc-comment-form{
+    overflow: inherit;
+    z-index:2;
+}
+.conversation-widget.with-controls .gc-comment-form .conversation-controls {
+    position: absolute;
+    margin-top: -20px;
+    top:0;
+    right: 40px;
+    z-index: 100;
+}
+
+.chat-command {
+    font-weight: 700;
+}
+
+.label-helpdesk {
+    display: block;
+    padding: 10px;
+    top: 10px;
+    width: calc(100% - 10px);
+    color: black;
+    background-color: #f6c5c8;
+    font-size: 18px !important;
+    margin: 5px;
+    border-radius: 0;
+    z-index: 10000;
+}
+
+.helpdesk-btn {
+    margin-top: 20px;
+    clear: both;
+    position: absolute;
+    right: 0;
+}

@@ -1,0 +1,53 @@
+.gc-user-form-widget {
+    background-color: #F0F0F0;
+    padding: 20px;
+    position: relative;
+}
+.gc-user-form-widget .form {
+    position: relative;
+    /*display: none;*/
+}
+.gc-user-form-widget h3 {
+    margin-bottom: 10px;
+}
+.gc-user-form-widget .form.active {
+    display: block;
+}
+.gc-user-form-widget .form .absolute {
+    position: absolute;
+}
+.gc-user-form-widget .form .top {
+    top:0;
+}
+.gc-user-form-widget .form .right {
+    right: 0;
+}
+.gc-user-form-widget .form-field {
+    margin-bottom: 20px;
+}
+
+.gc-user-form-widget .form-field input {
+    background: #FFF url(/cms/img/welcome-icons.png) no-repeat 9px -111px;
+    padding-left: 35px;
+    /*todo remove copypaste*/
+}
+
+.gc-user-form-widget .form-field input.form-field-email {
+    background-position: 9px 9px !important;
+    /*todo remove copypaste*/
+}
+.gc-user-form-widget .form-field input.form-field-phone {
+    background-position: 9px -71px !important;
+}
+.gc-user-form-widget h2 {
+    margin: 0;
+}
+.gc-user-form-widget .social-buttons {
+    float: right;
+}
+.gc-user-form-widget .social-buttons .btn-social-icon {
+    margin: 0 5px 0 0;
+}
+.gc-user-form-widget .social-buttons .btn:hover {
+    color: white;
+}

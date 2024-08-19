@@ -1,0 +1,41 @@
+.gc-standard-user-info {
+  overflow: hidden; }
+  .gc-standard-user-info .gc-user-block-avatar {
+    float: left;
+    margin-right: 15px; }
+
+.global-confirm-checkbox-block {
+  text-align: left;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  overflow: hidden; }
+
+.lt-form-horizontal .global-confirm-checkbox-block {
+  padding-top: 0px; }
+
+.global-confirm-checkbox-block input {
+  width: auto;
+  display: inline-block;
+  float: left; }
+
+.global-confirm-checkbox-block span.checkbox-text {
+  margin-left: 20px;
+  display: block; }
+
+.talks-link {
+  white-space: nowrap;
+  visibility: hidden; }
+
+:hover > .talks-link {
+  visibility: visible; }
+
+@media (max-width: 700px) {
+  .talks-link {
+    visibility: visible; } }
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  white-space: nowrap; }
+
+/*# sourceMappingURL=global.css.map */

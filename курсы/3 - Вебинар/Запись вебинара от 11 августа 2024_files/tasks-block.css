@@ -1,0 +1,67 @@
+.gc-tasks-block {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  text-align: center;
+  z-index: 50; }
+  .gc-tasks-block.opened .annotate-block {
+    width: 400px; }
+  .gc-tasks-block.opened .tasks-block {
+    display: block;
+    border-top: 0; }
+  .gc-tasks-block .annotate-block {
+    background: #F0F0F0;
+    padding-top: 3px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding-bottom: 5px; }
+  .gc-tasks-block .tasks-block {
+    display: none;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+    .gc-tasks-block .tasks-block .all-tasks-link-block {
+      background: #F5F5F5;
+      padding: 5px;
+      background: #E0E0E0;
+      display: block;
+      border-top: 1px solid #ddd; }
+    .gc-tasks-block .tasks-block .all-tasks-link-block:hover {
+      cursor: pointer;
+      background: #e3f1ff; }
+    .gc-tasks-block .tasks-block .task-block {
+      background: #F5F5F5;
+      display: block;
+      text-decoration: none;
+      border-top: 1px solid #ddd;
+      overflow: hidden;
+      padding: 10px;
+      text-align: left; }
+      .gc-tasks-block .tasks-block .task-block .status-wrapper {
+        float: right; }
+      .gc-tasks-block .tasks-block .task-block .task-text-data {
+        margin-left: 80px; }
+      .gc-tasks-block .tasks-block .task-block .image {
+        float: left;
+        margin-right: 5px; }
+      .gc-tasks-block .tasks-block .task-block .manager-name {
+        font-size: 0.8em;
+        color: #666; }
+      .gc-tasks-block .tasks-block .task-block .expired-time {
+        display: none; }
+      .gc-tasks-block .tasks-block .task-block.normal-time .expired-time {
+        display: block; }
+      .gc-tasks-block .tasks-block .task-block.normal-time.expired .expired-time {
+        color: red; }
+      .gc-tasks-block .tasks-block .task-block:hover {
+        background: #e3f1ff;
+        cursor: pointer; }
+  .gc-tasks-block .tasks-group-label {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: #E0E0E0; }
+
+/*# sourceMappingURL=tasks-block.css.map */

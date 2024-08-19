@@ -1,0 +1,8 @@
+.b-like-and-subscribe-notifications a {
+    font-size: 1em;
+}
+
+.b-like-and-subscribe-notifications .word-separator {
+    color: #808080;
+    padding: 0 3px 0 3px;
+}

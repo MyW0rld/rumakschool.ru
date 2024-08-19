@@ -1,0 +1,96 @@
+.conversation-widget {
+  position: relative;
+  background: #FAFAFB;
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: auto; }
+  .conversation-widget .comment .comment-delete-link {
+    display: none; }
+  .conversation-widget .comment .comment-time {
+    width: 100%;
+    clear: both;
+    font-size: 0.8em; }
+  .conversation-widget .comment.gc-active > .text .text-content {
+    border-color: black;
+    background: #f0f0ff; }
+  .conversation-widget .comment > .text {
+    float: left;
+    max-width: 80%; }
+    .conversation-widget .comment > .text .text-content {
+      background: white;
+      border: 1px solid #ddd;
+      overflow-x: hidden;
+      text-overflow: ellipsis; }
+  .conversation-widget .title .fa, .conversation-widget .title .glyphicon {
+    display: none; }
+  .conversation-widget .title .text {
+    font-weight: normal;
+    color: #CCC;
+    font-size: 12px; }
+  .conversation-widget .title a:hover {
+    border-bottom: 0px;
+    text-decoration: none; }
+  .conversation-widget .own-user-comment .title, .conversation-widget .my-comment .title {
+    display: none; }
+  .conversation-widget .own-user-comment .title, .conversation-widget .my-comment .title {
+    text-align: right;
+    padding-right: 55px; }
+  .conversation-widget .own-user-comment .comment > .text, .conversation-widget .my-comment .comment > .text {
+    /*background: #edf9ff;
+    border-color: #f0f4f7;*/
+    color: black;
+    border-width: 0;
+    max-width: 80%;
+    float: right; }
+    .conversation-widget .own-user-comment .comment > .text .text-content, .conversation-widget .my-comment .comment > .text .text-content {
+      background-color: #ddecf5; }
+      .conversation-widget .own-user-comment .comment > .text .text-content a, .conversation-widget .my-comment .comment > .text .text-content a {
+        color: black; }
+  .conversation-widget .own-user-comment .user-image-wrapper, .conversation-widget .my-comment .user-image-wrapper {
+    float: right; }
+  .conversation-widget .own-user-comment .comment-time, .conversation-widget .my-comment .comment-time {
+    text-align: right;
+    padding-right: 5px; }
+  .conversation-widget .comment-wrapper .comment .user-image-wrapper {
+    width: 30px; }
+  .conversation-widget .comment-wrapper .comment .user-profile-image {
+    width: 30px;
+    border-radius: 50%; }
+  .conversation-widget .comment-wrapper .comment .title {
+    /*display: none;*/ }
+  .conversation-widget .comment-wrapper .comment .text-content {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px; }
+  .conversation-widget .comment-wrapper .comment .comment-time {
+    color: #CCC; }
+
+.conversation-widget, .conversation-widget .comments-tree-wrapper, .conversation-widget .comments-tree
+ {
+  height: 100%; }
+
+.conversation-widget .comments-container {
+  overflow: auto;
+  padding-bottom: 50px; }
+
+.conversation-widget .gc-comment-form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0; }
+
+.conversation-widget .b-like-and-subscribe-notifications {
+  display: none; }
+
+.conversation-widget .new-comment-textarea {
+  background-color: #fff;
+  resize: vertical !important;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+@media screen and (max-width: 767px) {
+  .conversation-widget .gc-comment-form {
+    position: initial; }
+  .conversation-widget .comments-tree {
+    height: auto; } }
+
+/*# sourceMappingURL=conversation_widget.css.map */

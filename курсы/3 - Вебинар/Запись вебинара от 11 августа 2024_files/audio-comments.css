@@ -1,0 +1,66 @@
+.audio-comment, .audio-skill {
+	display: inline-block;
+	vertical-align: top;
+	position: absolute !important;
+	cursor: pointer;
+	right: 56px;
+	top: 5px;
+	color: #999;
+	display: none;
+}
+
+.audio-status {
+	font-size: 10px;
+	display: none;
+	background-color: #fff;
+}
+
+.audio-info {
+	border-radius: 5px;
+	font: 12px Arial, Helvetica, Sans-serif;
+	padding: 5px;
+	margin-top: 5px;
+	float: left;
+	margin-left: 5px;
+	background-color: #E0EAFF;
+}
+
+.audio-info .close-info {
+	top: -3px;
+	position: relative;
+	right: 5px;
+	cursor: pointer;
+	color: #999;
+}
+
+.audio-tip {
+	float: right;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 2px;
+	background-color: #fff;
+	width: 100px;
+	right: -15px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.audio-tip .tooltip-inner {
+	background-color: #fff;
+	padding: 0px;
+	text-align: left;
+}
+
+.audio-save, .audio-cancel, .audio-record, .audio-pause {
+	cursor: pointer;
+	color: #999;
+	padding-left: 10px;
+}
+
+.audio-save:hover, .audio-cancel:hover, .audio-record:hover, .audio-pause:hover {
+	color: #006caf;/*#000;*/
+}
+.audio-upload {
+	float: left;
+}

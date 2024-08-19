@@ -1,0 +1,49 @@
+.comment-rating-widget {
+  font-size: 13px;
+  position: relative; }
+  @media (max-width: 768px) {
+    .comment-rating-widget {
+      font-size: 22px; } }
+  .comment-rating-widget ul {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0; }
+    .comment-rating-widget ul li {
+      display: inline;
+      padding-right: 4px; }
+      .comment-rating-widget ul li:last-child {
+        padding-right: 0; }
+      .comment-rating-widget ul li.selected i.fa-star-o, .comment-rating-widget ul li:not(.selected) i.fa-star {
+        display: none; }
+      .comment-rating-widget ul li i {
+        color: #D5D5D5; }
+  .comment-rating-widget.readonly ul {
+    float: right;
+    margin: 0 10px 0 0; }
+  .comment-rating-widget:not(.readonly) ul li {
+    cursor: pointer; }
+    .comment-rating-widget:not(.readonly) ul li i.fa-star {
+      color: #F0AD4E; }
+  .comment-rating-widget .time {
+    display: none; }
+  .comment-rating-widget.readonly .time {
+    float: right;
+    display: inline;
+    white-space: nowrap;
+    font-size: 10px;
+    color: #CCCCCC;
+    margin-right: 5px; }
+  .comment-rating-widget .message {
+    display: inline;
+    white-space: nowrap;
+    position: absolute;
+    float: right;
+    font-size: 12px;
+    color: #F0AD4E;
+    margin-left: 8px; }
+    .comment-rating-widget .message.shown {
+      display: inline; }
+
+/*# sourceMappingURL=comment_rating_widget.css.map */

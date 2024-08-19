@@ -1,0 +1,85 @@
+.gc-modal {
+    z-index: 8000;
+}
+.gc-modal .modal-dialog {
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 500px) {
+    .gc-modal .modal-dialog.auth {
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .gc-modal.small-width .modal-dialog {
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .gc-modal .modal-dialog.auth {
+        width: 40%;
+    }
+}
+.gc-modal .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+}
+.gc-modal .modal-body {
+    /*padding-right: 0;*/
+}
+.gc-modal .modal-header {
+    background: #F0F0F0;
+}
+.gc-modal .gc-modal-content {
+    overflow: auto;
+}
+.gc-modal .loader {
+    text-align: center;
+    font-size: 2em;
+}
+.gc-modal .close-btn {
+    position: absolute;
+    top:5px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.gc-modal .btn {
+    border-radius: 0;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .gc-modal .modal-dialog {
+        padding-top: 20px;
+        width: 100%;
+
+    }
+    .gc-modal .close-btn {
+        position: absolute;
+        width: 100%;
+        background: #666;
+        color: white;
+        text-align: center;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+}
+
+
+body.iosBugFixCaret.modal-open { position: fixed; width: 100%; }
+
+.modal-footer .questionnaire-select
+{
+    margin-right: 5px;
+}
+
+.modal-footer .questionnaire-link{
+    margin-left: 5px;
+}

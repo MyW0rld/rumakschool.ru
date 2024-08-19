@@ -1,0 +1,12 @@
+.b-notifications-subscribe {
+    font-size: 0.8em;
+}
+.b-notifications-subscribe .button {
+    color: #428bca;
+    cursor: pointer;
+    border-bottom: 1px dotted #428bca;
+}
+.b-notifications-subscribe .subscribed {
+    color: gray;
+    border-bottom: 1px dotted gray;
+}

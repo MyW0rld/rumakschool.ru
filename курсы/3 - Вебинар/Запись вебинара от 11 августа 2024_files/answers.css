@@ -1,0 +1,505 @@
+.user-answer { padding: 10px; overflow: hidden; border-top: 1px solid #eee; padding-bottom: 50px; padding-top: 20px;}
+.user-answer:first-child { border-top: 0px; }
+.user-answer .user-image { float: left; margin-right: 10px }
+
+.user-answer .title .user-image {
+    display: none;}
+
+
+.user-answer .answer-content { overflow: hidden; }
+.user-answer .answer-content .title { font-weight: bold; margin-bottom: 5px}
+.user-answer .answer-content .answer-text { padding-bottom: 20px; }
+.user-answer .answer-content .scale-value-area {
+    font-weight: bold;
+}
+
+.user-answer .addfield { padding-bottom: 20px; }
+.user-answer .addfield label { font-weight: bold; display: block; }
+.user-answer .addfield .value { }
+.addfield.type-currency, .addfield.type-float { font-size: 1.2em}
+/*.user-answer .addfield.type-checkbox .value { display: none }*/
+.addfield .empty-value { font-style: italic }
+
+.user-answer.marked { /*border: 2px dashed orange;*/ background: rgb( 255, 252, 232 ) }
+
+
+.user-answer .answer-status { float: right; display: inline-block; }
+.user-answer .answer-status .answer-status-label { border-radius: 3px; background: #293d50; color: white; display: inline-block; padding: 2px 10px; }
+.user-answer .answer-status .answer-status-label a { color:white; text-decoration: underline; }
+.user-answer.type-free_comment .answer-status .answer-status-label { background: #999; }
+.user-answer.status-accepted .answer-status .answer-status-label { background: #27ae60}
+.user-answer.status-declined .answer-status .answer-status-label { background: #e74c3c }
+.user-answer.status-viewed .answer-status .answer-status-label { background: #3276b1 }
+.user-answer.type-mission_answer_no_check .answer-status .answer-status-label { background: #999 }
+
+
+.review { margin-top: 10px; padding: 10px}
+
+.answer-form .addfield label { display: inline-block; font-weight: normal; }
+.answer-form h3 { margin-bottom: 5px;}
+
+.answer-form { padding: 20px; background: #F0F0F0 }
+.answer-form .answer-textarea-container { width: 80%; padding-bottom: 20px; }
+.answer-form textarea { width: 100%; height: 100px; }
+.answer-form .addfield .type-text { width: 100%; /*height: 100px;*/ }
+.answer-form .addfield .type-string { width: 80%; }
+.answer-form .addfield .type-currency { width: 80px; }
+.answer-form .addfield .type-float { width: 80px; }
+.answer-form .addfield { padding-bottom: 20px;}
+.answer-form .addfield .help-message-label { display: block; }
+.answer-form .addfield { overflow: hidden; }
+.answer-form .addfield-type-checkbox label { display: inline;   }
+.answer-form .addfield-type-checkbox { padding-left: 20px;}
+.answer-form .addfield-type-checkbox input { float: left; margin-right: 5px; margin-left: -20px; }
+.answer-form .btn-link {padding: 0;color: #006caf;}
+.answer-form .btn-save-draft {margin-left: 20px;}
+
+
+.self-answers .user-answer { border-top: 1px solid #eee; }
+
+.user-answer .addfield { background: #f0f0e7; margin-top: 10px; padding: 10px; clear: both;}
+
+
+
+.lesson-answer-comment { overflow: hidden; margin-bottom: 10px; background: #edeff4; padding: 4px;}
+.lesson-answer-comment.fresh-comment { background: #fffbd8}
+.lesson-answer-comment .user-name { color: #666; }
+.lesson-answer-comment .text-block { overflow: hidden; }
+
+.new-comment {}
+.new-comment .btn-send { display: none; }
+.new-comment-textarea { width: 100%; height: 26px; border: 1px solid #ddd; }
+
+.new-comment.active .btn-send { display: block; margin-top: 10px; }
+.new-comment.active-with-file .btn-send { display: block; margin-top: 10px; }
+.new-comment .textarea-block { overflow: hidden; width: 80%; }
+.chat-widget .new-comment .textarea-block { width: 100%; }
+
+.lesson-answer-comment .user-image, .lesson-answer-comment .user-image img { width: 32px;  }
+.new-comment-to-answer .user-image img { width: 32px; margin-left: 3px;}
+.new-comment-to-answer .user-image { margin-right: 8px;}
+
+.simple-answer { background: #F0F0F0; padding-left: 10px;}
+.simple-answer .new-comment-textarea { height: 40px; }
+.simple-answer.user-answer { padding-bottom: 20px; }
+
+
+.answer-main-content-next { display: none; }
+.user-answer .comments { margin-top: 10px; }
+
+.ans-answer-video {
+    max-width: 400px;
+    width: 100%;
+}
+
+.lesson-mission-text-info {
+    padding: 10px;
+    background: #F5F5E7;
+}
+
+.lesson-mission-text-info h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lesson-mission-text-info.ideal-answer {
+    background: #DFF0D8;
+}
+
+
+.answer-controls { padding-top: 20px; }
+.answer-with-controls .answer-status { cursor: pointer }
+
+.answer-status-review-info {
+    display: inline-flex;
+    text-align: center;
+    flex-wrap: wrap;
+    width: min-content;
+    justify-content: center;
+}
+.answer-status-review-info .status-label {
+    width: max-content;
+}
+.answer-status-review-info .status-label-reviewer {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.answer-status{ text-align: right}
+.answer-status .glyphicon { font-size: 0.8em;}
+
+
+
+
+
+.default-public-level .actual-public-level-label, .default-public-level .actual-public-level-label .caret { color: #999; border-color: #999; }
+
+.new-comment .attach-file-link { font-size: 20px; color: #ccc; margin-left: 5px; cursor: pointer; }
+.new-comment .attach-file-block { padding-top: 5px; }
+.new-comment input[type="file"] { display: inline }
+.answer-comment-form .uploadifive-button, .answer-comment-form .uploadifive-queue{
+    margin-bottom: 10px !important;
+}
+.answer-comment-form .file-container {
+    margin-bottom: 10px;
+}
+
+
+.answer-edit-comment-link { float: right; margin-right: 5px; visibility: hidden}
+.lesson-answer-comment:hover .answer-edit-comment-link{visibility: visible}
+.edit-comment-textarea { width: 80%;}
+
+.image-editor-modal .modal-dialog { width: 960px; }
+.image-editor-modal .modal-body { padding: 0; }
+.image-editor-modal .modal-content { border-radius: 0px; background: #F0F0F0; padding: 20px;}
+.image-editor-modal .modal-content .close{
+    position: absolute;top: 10px;right:10px;
+}
+
+.linked-answer { background: #FAFAF9 }
+
+.enable-fabric-editor-button {
+    position: relative;
+}
+
+.size-selector {
+    padding:0;
+    font-size: 0.9em;
+    clear: both;
+    overflow: hidden;
+    margin: -10px auto 0 auto;
+    width:350px;
+}
+.size-selector li {
+    margin:0;
+    padding:2px 5px 2px 5px;
+    color:#006caf;
+    cursor:pointer;
+    list-style: none;
+    float:left;
+}
+
+.size-selector li.active {
+    color:black;
+    cursor:default;
+}
+
+.size-selector li:hover {
+    text-decoration: underline;
+}
+
+.size-selector li.active:hover {
+    text-decoration: none;
+}
+
+.user-answer .comments-tree .level-1 .comment-wrapper {
+    padding-left:0;
+    padding-top: 0;
+}
+
+.user-answer .comments-tree .comment-wrapper {
+
+    margin-bottom: 0;
+}
+
+.user-answer .comment-form-wrapper {
+    background: none;
+}
+
+.user-answer .comment-form-wrapper .new-comment .user-image img {
+    width: 32px;
+}
+.user-answer .comments-tree .level-1 .comment .user-image {
+    width: 32px;
+}
+
+.user-answer .comment-form-wrapper {
+    padding-top: 0;
+    padding-left: 5px;
+}
+
+.additional-controls .audio-comment {
+    display: block;
+    z-index: 9999;
+    position: initial !important;
+    float:right;
+}
+.audio-control {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.audio-control .audio-tip {
+    position: absolute;
+    top: -70px;
+}
+
+.public-level-block {
+    margin-left: 20px;
+}
+.public-level-block.user-can-hide-answer {
+    font-size: 0.8em;
+}
+
+.answers-page-filter .dropdown-filter {
+    margin-right: 30px; display: inline-block;
+}
+
+.answer-form .answer-form-profile {
+    float: left; margin-right: 10px;
+}
+.answer-form .answer-form-content {
+    margin-left: 50px;
+}
+
+
+
+.addfield-type-goal-form {
+    background: #E0E0E0;
+    padding: 10px;
+    width: 400px;
+}
+
+.answer-form-inner {
+    margin-left: 50px;
+}
+
+@media( max-width: 767px ) {
+
+    .addfield-type-goal-form {
+        padding: 10px;
+        width: auto;
+    }
+
+    .answer-form-inner {
+        margin-left: 0;
+    }
+
+
+    .answer-form .answer-form-profile {
+        display: none;
+    }
+    .answer-form .answer-form-content {
+        margin-left: 0px;
+    }
+
+    .answer-form .answer-textarea-container {
+        width: 100%;
+    }
+
+
+
+    .user-answer {
+        padding: 5px;
+    }
+
+    .user-answer .user-image {
+        display: none;
+    }
+    .user-answer .title .user-image {
+        display: block;
+    }
+    .user-answer .title {
+        margin-top: 0px;
+    }
+
+    .user-answer .answer-status {
+        float: none;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .new-comment .textarea-block { overflow: hidden; width: 95%; }
+
+    .comments {
+
+    }
+    .comments-tree .level-1 .comment .user-image-wrapper {
+        float: right;
+        overflow: hidden;
+    }
+
+    .comments .comments-tree .level-1 .comment-wrapper {
+        padding: 0;
+    }
+
+    .show-lesson-link {
+        margin-bottom: 2px;
+        display: block;
+    }
+    .lesson-answer-comment.fresh-comment { padding: 10px;}
+
+    .user-answer .comment-form-wrapper {
+        padding-bottom: 0;
+    }
+
+    .answer-controls {
+
+    }
+
+    .answer-controls .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .public-level-block {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .answers-page-filter .dropdown-filter {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .answers-page-filter .dropdown-filter select {
+        width: 100%;
+    }
+
+    .answers-page-filter {
+        display: none;
+    }
+
+    .answers-list {
+        padding-top: 10px;
+    }
+
+    .size-selector {
+        margin: 0;
+    }
+
+    .image-editor-modal .modal-content { padding: 20px 0 ;}
+
+    .editor .controls {
+        margin-bottom: 40px;
+    }
+
+
+}
+
+.lesson-mission-wrapper { margin-top: 3px; border: 1px solid #ddd; }
+
+
+
+.user-answer-no-dates .answer-date , .user-answer-no-dates .comment-time .value {
+    display: none;
+}
+
+.answer-files {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.answer-files .file > a > img {
+    max-width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+.answer-files .simple-filelist-fileicon {
+    clear: both;
+}
+.gc-right-drawer {
+    overflow-y: auto;
+    position: fixed;
+    display: none;
+    top: 0;
+    border: 1px solid #ddd;
+    background: #F0F0F0;
+    right: 0;
+    height: 100%;
+    width: 450px;
+}
+.gc-drawer-loader {
+    background: url(/public/img/loading-gray.gif) no-repeat;
+    width: 43px;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+}
+.gc-drawer-title {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.gc-right-drawer__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.gc-history-timeline {
+    margin: 30px 0;
+    padding: 0;
+    position: relative;
+}
+.gc-history-timeline li {
+    display: flex;
+    line-height: 1;
+}
+.gc-history-timeline--date {
+    flex: 0 0 150px;
+    color: #999;
+    font-style: italic;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 50px;
+    transition: .3s;
+}
+.gc-history-timeline--circle {
+    flex: 0 0 50px;
+    position: relative;
+    text-align: center;
+}
+.gc-history-timeline--circle:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: #a7a1a1;
+    margin: auto;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+.gc-history-timeline--circle i {
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    display: inline-block;
+    background: #818de3;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.gc-history-timeline--description {
+    padding-bottom: 30px;
+    margin-top: 9px;
+}
+.gc-history-timeline li:first-child .gc-history-timeline--circle:before {
+    margin-top: 15px;
+}
+.gc-history-timeline li:first-child i {
+    top: 5px;
+}
+.gc-history-timeline li:hover .gc-history-timeline--date {
+    color: #555;
+}
+@media (max-width: 480px) {
+    .gc-right-drawer {
+        width: 100%;
+    }
+    .gc-history-timeline {
+        margin-left: 0;
+    }
+}

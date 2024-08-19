@@ -1,0 +1,110 @@
+.gc-fabric-editor {
+    position: relative;
+    width: 900px;
+    min-height: 270px;
+}
+.gc-fabric-editor .loader {
+    font-size: 20px;
+}
+.gc-fabric-editor .message-block {
+    display:none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.gc-fabric-editor .canvas-wrapper {
+    float: left;
+    width:600px;
+}
+.gc-fabric-editor .canvas-wrapper .canvas-container{
+    margin: auto;
+}
+.gc-fabric-editor .controls {
+    float: left;
+    width: 300px;
+    min-height: 250px;
+    position: relative;
+    margin-top: 10px;
+}
+.gc-fabric-editor .buttons {
+    width: 300px;
+    position: relative;
+}
+.gc-fabric-editor .settings {
+    padding: 5px 10px 5px 10px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    right: 55px;
+    width: 100px;
+}
+.gc-fabric-editor .buttons .group {
+    padding: 5px 10px 5px 10px;
+    position: relative;
+}
+.gc-fabric-editor .button {
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*float: left;*/
+    border: 1px dotted transparent;
+    /*margin: 5px 0 5px 5px;*/
+    cursor: pointer;
+    /*position: relative;*/
+    /*display: block;*/
+    font-size: 20px;
+}
+.gc-fabric-editor .button-active {
+    border: 1px dotted #000000;
+}
+
+
+.answers-page-filter-toggler {
+    display: none;
+}
+
+.btn-close-editor {
+    display: none;
+}
+
+
+@media ( max-width: 767px ) {
+
+    .btn.btn-close-editor {
+        display: block;
+    }
+
+    .gc-fabric-editor .canvas-wrapper {
+        float: none;
+    }
+
+    .image-editor-modal .modal-dialog {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .image-editor-modal .modal-dialog .modal-content {
+        height: auto;
+    }
+
+    .gc-fabric-editor .controls {
+        float: none;
+        width: 95%;
+    }
+
+    .answers-page-filter-toggler {
+        display: block;
+        border: 2px solid #999;
+        padding: 10px;
+        text-align: center;
+        background: #F0F0F0;
+        cursor: pointer;
+    }
+
+
+    .image-editor-modal .modal-content .close {
+        right: 18px !important;
+    }
+
+}
+

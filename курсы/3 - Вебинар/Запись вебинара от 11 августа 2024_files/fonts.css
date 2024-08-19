@@ -1,0 +1,13 @@
+body,
+.standard-page-content h1 {
+	font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+	font-family: "Lato", "proxima-nova", Helvetica, Arial, sans-serif;
+}
+
+ h1.standard-page-title,
+.standard-logo .logo-text {
+	font-family: "proxima-nova", "arial", sans-serif;
+}

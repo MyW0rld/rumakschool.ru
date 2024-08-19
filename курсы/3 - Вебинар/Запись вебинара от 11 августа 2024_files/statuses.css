@@ -1,0 +1,79 @@
+.bg-commented {
+  background: lightgoldenrodyellow; }
+
+.bg-problem {
+  background: #ffecf3; }
+
+.bg-lightblue {
+  background: #f0ffff; }
+
+.deal-status.deal-status-label {
+  padding: 3px 10px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px; }
+.deal-status.deal-status-block {
+  padding: 3px 10px;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  width: 140px; }
+.deal-status.status-new {
+  background: orange;
+  color: white; }
+.deal-status.status-payed {
+  background: green;
+  color: white; }
+.deal-status.status-payed.not-payed {
+  font-weight: normal;
+  background: rgba(181, 182, 143, 0.45); }
+.deal-status.status-part_payed {
+  background: #81c17e;
+  color: white; }
+.deal-status.status-cancelled {
+  background: gray;
+  color: white; }
+.deal-status.status-not_confirmed {
+  background: #7a9fb6;
+  color: white; }
+.deal-status.status-in_work {
+  background: blue;
+  color: white; }
+.deal-status.status-false {
+  background: #d3d3d3;
+  color: black; }
+.deal-status.status-payment_waiting {
+  background: rgba(0, 182, 0, 0.45);
+  font-weight: normal;
+  color: black; }
+.deal-status.status-waiting_for_return {
+  background: #ffad99;
+  font-weight: normal;
+  color: black; }
+
+.deal-status-light.status-new {
+  background: #fff6e5; }
+.deal-status-light.status-payed {
+  background: #e5f2e5; }
+.deal-status-light.status-payed.not-payed {
+  background: rgba(249, 250, 247, 0.89); }
+.deal-status-light.status-part_payed {
+  background: #f8fbf8; }
+.deal-status-light.status-cancelled {
+  background: #f2f2f2; }
+.deal-status-light.status-not_confirmed {
+  background: #f8fafb; }
+.deal-status-light.status-in_work {
+  background: #f2f2ff; }
+.deal-status-light.status-false {
+  background: #e9e9e9; }
+.deal-status-light.status-payment_waiting {
+  background: rgba(247, 252, 247, 0.945); }
+.deal-status-light.status-waiting_for_return {
+  background: #fff6f4; }
+
+/*# sourceMappingURL=statuses.css.map */

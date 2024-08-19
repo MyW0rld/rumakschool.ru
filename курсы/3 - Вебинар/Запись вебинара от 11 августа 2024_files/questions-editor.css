@@ -1,0 +1,297 @@
+.questions-editor {
+  max-width: 600px; }
+  .questions-editor .field-item {
+    margin-bottom: 20px; }
+  .questions-editor .fa-caret-down {
+    margin-right: 5px; }
+  .questions-editor .redactor-editor {
+    padding: 7px 10px; }
+  .questions-editor .redactor-placeholder:after {
+    top: 7px;
+    left: 10px; }
+  .questions-editor .question-list {
+    /*margin-bottom: 10px;*/ }
+    .questions-editor .question-list .fa-check-circle {
+      color: green; }
+    .questions-editor .question-list .questionary-list-item {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background: #F0F0E7;
+      margin-bottom: 10px; }
+      .questions-editor .question-list .questionary-list-item:hover {
+        background: #F0F0F0; }
+      .questions-editor .question-list .questionary-list-item .toggle-expand-link {
+        cursor: pointer; }
+      .questions-editor .question-list .questionary-list-item .collapsed-data {
+        display: block; }
+      .questions-editor .question-list .questionary-list-item .expanded-data {
+        display: none; }
+      .questions-editor .question-list .questionary-list-item .collapsed-span {
+        display: inline; }
+      .questions-editor .question-list .questionary-list-item .expanded-span {
+        display: none; }
+      .questions-editor .question-list .questionary-list-item .question-number, .questions-editor .question-list .questionary-list-item .question-title-input, .questions-editor .question-list .questionary-list-item .question-picture-wrapper {
+        margin-bottom: 15px; }
+      .questions-editor .question-list .questionary-list-item .question-picture-wrapper {
+        margin-top: 15px; }
+      .questions-editor .question-list .questionary-list-item.expanded .collapsed-data {
+        display: none; }
+      .questions-editor .question-list .questionary-list-item.expanded .expanded-data {
+        display: block; }
+      .questions-editor .question-list .questionary-list-item.expanded .collapsed-span {
+        display: none; }
+      .questions-editor .question-list .questionary-list-item.expanded .expanded-span {
+        display: inline; }
+  .questions-editor .question-variant label {
+    margin-top: 15px; }
+  .questions-editor .question-variant .additional-field {
+    padding-left: 20px; }
+  .questions-editor.questions-editor-light .question-variant label {
+    margin-top: 5px; }
+  .questions-editor.questions-editor-light .variant-answer-right-input {
+    margin-bottom: 5px; }
+  .questions-editor.questions-editor-light .variant-picture-wrapper {
+    display: none; }
+  .questions-editor.questions-editor-light .variant-btn-set-video {
+    float: right;
+    padding-top: 0; }
+  .questions-editor.questions-editor-light .variant-video-wrapper {
+    display: none; }
+    .questions-editor.questions-editor-light .variant-video-wrapper .variant-video-input-upload {
+      background-color: #505050;
+      background-image: linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -o-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -moz-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -webkit-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -ms-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #505050), color-stop(1, #707070));
+      background-position: center top;
+      background-repeat: no-repeat;
+      color: #FFF;
+      font: bold 12px Arial, Helvetica, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      position: relative;
+      display: block; }
+    .questions-editor.questions-editor-light .variant-video-wrapper .variant-video-input-delete {
+      margin-left: 5px; }
+  .questions-editor.questions-editor-light :not(.expanded) .question-title-input {
+    border: 0;
+    box-shadow: none; }
+  .questions-editor.questions-editor-light .question-points-title {
+    float: right;
+    color: #999; }
+    .questions-editor.questions-editor-light .question-points-title.label.label-success {
+      color: white; }
+  .questions-editor.questions-editor-light .btn-add-question {
+    /*display: none;*/
+    margin-top: 10px; }
+  .questions-editor.questions-editor-light .question-title-label {
+    display: none; }
+  .questions-editor.questions-editor-light .questionary-list-item.expanded {
+    background: #F0F0E7; }
+  .questions-editor.questions-editor-light .variant-list {
+    width: auto;
+    padding-top: 10px; }
+    .questions-editor.questions-editor-light .variant-list .redactor-editor {
+      padding: 3px 10px;
+      border-radius: 3px;
+      min-height: 28px; }
+  .questions-editor.questions-editor-light .question-description-input {
+    display: none; }
+  .questions-editor.questions-editor-light .badge {
+    color: white;
+    padding-top: 4px; }
+  .questions-editor.questions-editor-light .btn-set-points {
+    float: right; }
+  .questions-editor.questions-editor-light .btn-set-image {
+    float: right; }
+  .questions-editor.questions-editor-light .btn-set-video {
+    float: right; }
+  .questions-editor.questions-editor-light .question-variant {
+    margin-right: 5px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 30px;
+    clear: both; }
+    .questions-editor.questions-editor-light .question-variant .variant-value {
+      background: white;
+      border-radius: 3px;
+      border: 1px solid transparent; }
+    .questions-editor.questions-editor-light .question-variant .variant-value, .questions-editor.questions-editor-light .question-variant .redactor-editor {
+      background: #DFB0B0;
+      border: 1px solid #BF9090;
+      font-family: "proxima-nova","Lato","Helvetica";
+      font-size: 14px; }
+    .questions-editor.questions-editor-light .question-variant.is-right .variant-value, .questions-editor.questions-editor-light .question-variant.is-right .redactor-editor {
+      background: #B0DFB0;
+      border: 1px solid #90BF90; }
+    .questions-editor.questions-editor-light .question-variant .variant-is-right {
+      position: absolute;
+      top: 6px;
+      left: 10px; }
+    .questions-editor.questions-editor-light .question-variant:hover .variant-delete-link, .questions-editor.questions-editor-light .question-variant:hover .variant-sort-handler, .questions-editor.questions-editor-light .question-variant:hover .variant-settings-link {
+      display: block; }
+    .questions-editor.questions-editor-light .question-variant .variant-delete-link {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      top: 8px;
+      right: 5px; }
+    .questions-editor.questions-editor-light .question-variant .variant-sort-handler {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      top: 8px;
+      right: 25px; }
+    .questions-editor.questions-editor-light .question-variant .variant-settings-link {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      top: 8px;
+      right: 45px; }
+    .questions-editor.questions-editor-light .question-variant .variant-value {
+      width: 100%;
+      padding: 5px 10px; }
+  .questions-editor.questions-editor-light .form-group {
+    margin-bottom: 0; }
+  .questions-editor.questions-editor-light .table {
+    margin-bottom: 0; }
+  .questions-editor.questions-editor-light .questionary-list-item {
+    border: 0;
+    border-bottom: 1px solid #eee;
+    background: white;
+    position: relative;
+    margin-bottom: 0; }
+    .questions-editor.questions-editor-light .questionary-list-item .question-title-input {
+      margin-bottom: 5px; }
+    .questions-editor.questions-editor-light .questionary-list-item .questionary-buttons .btn-free-space {
+      display: none; }
+    @media (max-width: 520px) {
+      .questions-editor.questions-editor-light .questionary-list-item .questionary-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .questions-editor.questions-editor-light .questionary-list-item .questionary-buttons .btn-link {
+          flex-basis: 0; }
+        .questions-editor.questions-editor-light .questionary-list-item .questionary-buttons .btn-free-space {
+          flex-grow: 1;
+          display: flex; }
+        .questions-editor.questions-editor-light .questionary-list-item .questionary-buttons .btn-set-image {
+          order: 3; }
+        .questions-editor.questions-editor-light .questionary-list-item .questionary-buttons .btn-set-points {
+          order: 4; }
+        .questions-editor.questions-editor-light .questionary-list-item .questionary-buttons .btn-add-variant {
+          order: 5;
+          flex: 0 0 auto;
+          flex-basis: 50%;
+          align-self: start;
+          text-align: left; } }
+  .questions-editor.questions-editor-light .btn-delete-question {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+  .questions-editor.questions-editor-light .questionary-list-item:last-child {
+    border-bottom: 0; }
+  .questions-editor.questions-editor-light .question-number {
+    display: none; }
+  .questions-editor.questions-editor-light .question-title-input {
+    font-size: 1.1em; }
+  .questions-editor.questions-editor-light .question-picture-wrapper {
+    display: none; }
+  .questions-editor.questions-editor-light .question-points-wrapper {
+    display: none; }
+  .questions-editor.questions-editor-light .questions-video-player {
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+  .questions-editor.questions-editor-light .question-video-wrapper {
+    display: none; }
+    .questions-editor.questions-editor-light .question-video-wrapper .question-video-input-upload {
+      background-color: #505050;
+      background-image: linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -o-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -moz-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -webkit-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -ms-linear-gradient(bottom, #505050 0%, #707070 100%);
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #505050), color-stop(1, #707070));
+      background-position: center top;
+      background-repeat: no-repeat;
+      color: #FFF;
+      font: bold 12px Arial, Helvetica, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      position: relative;
+      display: block; }
+    .questions-editor.questions-editor-light .question-video-wrapper .question-video-input-delete {
+      margin-left: 5px; }
+  .questions-editor.questions-editor-light .variants-table th {
+    display: none; }
+  .questions-editor.questions-editor-light .additional-field {
+    display: none; }
+
+.question-variant .btn-set-image, .question-variant .btn-set-video {
+  padding: 0 5px 15px; }
+
+.question-btn-set-video {
+  float: right; }
+
+.variant-points {
+  width: 30px;
+  text-align: center; }
+
+.variant-points-wrapper {
+  margin-top: 31px;
+  padding-top: 20px; }
+
+.questionary-light-dialog .modal-body {
+  padding: 0; }
+
+.redactor-main-toolbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 60px;
+  background-color: #000;
+  color: white;
+  z-index: 1000;
+  transition: 0.5s; }
+  .redactor-main-toolbar.out {
+    transform: translateY(-65px); }
+  .redactor-main-toolbar .redactor-toolbar {
+    background-color: #000;
+    color: white;
+    border: none; }
+    .redactor-main-toolbar .redactor-toolbar li a {
+      padding: 24px 25px 23px 25px;
+      color: white; }
+      .redactor-main-toolbar .redactor-toolbar li a.redactor-act, .redactor-main-toolbar .redactor-toolbar li a.dropact {
+        color: black; }
+
+.redactor-editor p, .block-set-editor p {
+  margin: 0;
+  line-height: inherit; }
+
+.modal-footer .questionnaire-select {
+  margin-right: 5px; }
+.modal-footer .questionnaire-link {
+  margin-left: 5px; }
+
+.questionary__use_exists {
+  padding-bottom: 15px; }
+  .questionary__use_exists .questionnaire-link {
+    margin-left: 5px; }
+
+.note-testing .btn-sm {
+  margin-right: 5px; }
+
+/*# sourceMappingURL=questions-editor.css.map */

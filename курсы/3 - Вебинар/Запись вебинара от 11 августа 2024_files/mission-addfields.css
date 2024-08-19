@@ -1,0 +1,18 @@
+.table.table-fields-list {
+  margin-bottom: 0; }
+  .table.table-fields-list tr td, .table.table-fields-list tr th {
+    border: 0;
+    vertical-align: middle;
+    padding: 5px; }
+  .table.table-fields-list tr td.type-td {
+    width: 200px; }
+  .table.table-fields-list .btn-delete {
+    cursor: pointer; }
+  .table.table-fields-list.is-checklist thead {
+    display: none; }
+  .table.table-fields-list.is-checklist .type-td {
+    display: none; }
+  .table.table-fields-list.is-checklist .required-td {
+    display: none; }
+
+/*# sourceMappingURL=mission-addfields.css.map */
