@@ -6,6 +6,8 @@ div#cgit {
 	color: #9908d7;
 	background-color: #2b2b2b;
 	padding: 4px;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
 }
 
 div#cgit a {
@@ -114,6 +116,8 @@ div#cgit table.list {
 
 div#cgit table.list tr {
 	background: #2b2b2b;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 div#cgit table.list tr.logheader {
@@ -122,10 +126,14 @@ div#cgit table.list tr.logheader {
 
 div#cgit table.list tr:hover {
 	background: #414141;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
 }
 
 div#cgit table.list tr.nohover:hover {
 	background: #2b2b2b;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
 }
 
 div#cgit table.list th {
@@ -185,6 +193,8 @@ div#cgit table.list td.logmsg {
 
 div#cgit table.list td a {
 	color: #A89E5D;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 div#cgit table.list td a.ls-dir {
