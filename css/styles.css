@@ -16,8 +16,17 @@
     text-align: center;
     padding: 16px;
     text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 #menu li a.active {
     background-color: #2b2b2b;
+}
+
+#menu li a:hover{
+    background-color: #2b2b2b;
+	color: #E5D9CE;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
 }
